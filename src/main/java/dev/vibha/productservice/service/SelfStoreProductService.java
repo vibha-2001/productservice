@@ -21,4 +21,9 @@ public class SelfStoreProductService implements ProductService{
     public List<GenericProductDTO> getAllProduct() {
         return null;
     }
+
+    @Override
+    public GenericProductDTO deleteProduct(long id) {
+        return null;
+    }
 }

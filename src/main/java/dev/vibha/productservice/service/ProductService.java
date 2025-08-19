@@ -12,4 +12,6 @@ GenericProductDTO getProductById(long id);
 GenericProductDTO createProduct(GenericProductDTO product);
 
 List<GenericProductDTO> getAllProduct();
+
+GenericProductDTO deleteProduct(long id);
 }
