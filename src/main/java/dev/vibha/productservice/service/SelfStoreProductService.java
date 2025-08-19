@@ -4,6 +4,8 @@ import dev.vibha.productservice.dtos.GenericProductDTO;
 import dev.vibha.productservice.models.Product;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service("SelfProductServiceImp")
 public class SelfStoreProductService implements ProductService{
     public GenericProductDTO getProductById(long id){
@@ -15,4 +17,8 @@ public class SelfStoreProductService implements ProductService{
         return null;
     }
 
+    @Override
+    public List<GenericProductDTO> getAllProduct() {
+        return null;
+    }
 }

@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController()
 @RequestMapping("/products")
 public class ProductController {
@@ -18,7 +20,9 @@ public class ProductController {
     }
 
     @GetMapping
-    public void getAllProducts(){
+    public List<GenericProductDTO> getAllProducts(){
+
+        return productService.getAllProduct();
 
     }
 
